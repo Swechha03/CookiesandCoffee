@@ -1,23 +1,14 @@
 import  './HomePage.css';
 import HomePagePicture from '../assets/cookiesandcoffee.jpg';
+import {Header} from './Header.jsx'
 import {Link} from 'react-router-dom'
+
 
 export function HomePage() {
 
     return (
         <>
-                <header>
-                    <nav>
-                        <div className="headerOptions">
-                            <Link to="/Menu">Browse Menu </Link>
-                            <Link to="/Locations">Locations </Link>
-                            <Link to="/AboutUS">About Us </Link>
-                            <Link to="/CustomerStories">Customer Stories </Link>
-
-                        </div>
-
-                    </nav>
-                </header>
+           <Header />
 
                 <div className="Homepage">
                     <div className="sideDiv">
@@ -36,7 +27,7 @@ export function HomePage() {
             <div className="footer-links">
                 <h4> Quick Links</h4>
                 <ul>
-                    <li> <Link to="/HomePage"> Home </Link></li>
+                    <li> <Link to="/"> Home </Link></li>
                     <li> <Link to="/Menu"> Menu </Link></li>
                     <li> <Link to="/AboutUS"> About Us </Link></li>
                     <li> <Link to="/Locations"> Locations </Link></li>
